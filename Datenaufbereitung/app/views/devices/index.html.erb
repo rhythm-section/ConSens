@@ -1,0 +1,40 @@
+<h1>Smartphones</h1>
+
+<h2>Übersicht</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Android ID</th>
+      <th>Marke</th>
+      <th>Hersteller</th>
+      <th>Modell</th>
+      <th>Produkt</th>
+      <th>BS-Version</th>
+      <th>Standorte</th>
+      <th>Aktivitäten</th>
+      <th>App Sessions</th>
+      <th>Benutzte Anwendungen</th>
+      <th>Systemeinstellungen</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @devices.each do |device| %>
+      <tr>
+        <td><%= link_to "Smartphone #{device.id}", device %></td>
+        <td><%= device.android_id %></td>
+        <td><%= device.brand %></td>
+        <td><%= device.manufacturer %></td>
+        <td><%= device.product %></td>
+        <td><%= device.model %></td>
+        <td><%= device.os_version %></td>
+        <td><%= device.locations.count %></td>
+        <td><%= device.activities.count %></td>
+        <td><%= device.app_sessions.count %></td>
+        <td><%= device.app_usages.count %></td>
+        <td><%= device.system_settings.count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

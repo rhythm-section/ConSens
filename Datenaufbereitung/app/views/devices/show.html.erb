@@ -1,0 +1,10 @@
+<h1>Smartphone Nr. <%= @device.id %> (<%= @device.user_name %>)</h1>
+<p>Aufgezeichnet von <b><%= @start_datetime %></b> bis <b><%= @end_datetime %></b></p>
+<p><%= @records_count %> aufgezeichnete Datensätze</p>
+
+<h2>Standorte</h2>
+
+<p><%= @clusters.count %> Standort-Cluster gefunden.</p>
+<p><%= @locations_without_cluster.count %> von <%= @locations.count %> Standorten konnten keinem Cluster zugeordnet werden.</p>
+
+<div id="map-canvas"></div>

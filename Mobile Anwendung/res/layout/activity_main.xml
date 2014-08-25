@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textview_enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/enter_name_text" />
+
+    <EditText
+        android:id="@+id/edit_text_enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_enter_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_name_hint" />
+    
+   	<Button
+        android:id="@+id/service_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/service_start"
+        android:layout_marginTop="20dp"
+        android:text="@string/service_stop" />
+
+   	<Button
+   	    android:id="@+id/service_start"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/edit_text_enter_name"
+   	    android:layout_marginTop="48dp"
+   	    android:text="@string/service_start" />
+   	
+   	<Button
+   	    android:id="@+id/db_save"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/service_stop"
+   	    android:layout_marginTop="48dp"
+   	    android:text="@string/db_save" />
+
+</RelativeLayout>

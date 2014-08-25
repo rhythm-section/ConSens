@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConSens</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_save">DB</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_send">Server</string>
+    <string name="service_start">Start</string>
+    <string name="service_stop">Stop</string>
+    <string name="db_save">Copy DB</string>
+    <string name="enter_name_text">Bitte Teilnehmerkennung eingeben und Start drücken:</string>
+    <string name="enter_name_hint">1</string>
+
+</resources>
